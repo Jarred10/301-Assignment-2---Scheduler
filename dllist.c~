@@ -102,10 +102,10 @@ List *deleteNode(List *list, char* item){
 }
 
 void printList(List *list, uint32_t clock){
-/*
+
 	if(list->head){ printf("Head of list: %s, ",list->head->word);} else printf("Head of list: null, ");
 	if(list->tail){ printf("Tail of list: %s\n",list->tail->word);} else printf("Tail of list: null\n");
-	*/
+	
 	printf("Upcoming tasks:\n");
 	Node *temp;
 	for(temp = list->head;temp; temp = temp->next){

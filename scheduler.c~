@@ -47,7 +47,8 @@ int main(int argc, char *argv[]){
 			printList(list, clock);
 		}
 		else if(strcmp(token, "CLEAR") == 0){
-			clearList(list);	
+			clearList(list);
+			list = NULL;		
 		}
 	}
 
