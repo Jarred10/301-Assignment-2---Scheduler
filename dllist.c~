@@ -109,7 +109,7 @@ void printList(List *list, uint32_t clock){
 	printf("Upcoming tasks:\n");
 	Node *temp;
 	for(temp = list->head;temp; temp = temp->next){
-		printf("%s %d\n", temp->word, temp->time - clock);
+		printf("(%p) %s %d %p %p\n", temp, temp->word, temp->time - clock, temp->previous, temp->next);
 	}
 }
 
