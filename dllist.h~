@@ -15,7 +15,6 @@ typedef struct List {
 	struct Node *tail;
 } List;
 
-//methods from dllist.c
 Node *createNode(char *word, uint32_t time, uint32_t repeat);
 List *createList();
 List *insert(List* list, Node *item);
